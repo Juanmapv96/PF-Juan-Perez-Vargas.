@@ -1,0 +1,17 @@
+ /* nosotros */
+.main__cv__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr,1fr;   
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "card1 card2"
+    "card1 card2";
+   
+    }
+      
+      .cv__container1 { grid-area: card1; }
+      
+      .cv__container2 { grid-area: card2; }
+ 

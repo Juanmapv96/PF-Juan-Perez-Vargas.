@@ -1,0 +1,13 @@
+@import "../var/variables";
+*{
+    font-family: $fuente-principal;
+}
+a, ul{
+    list-style: none;
+    text-decoration-line: none;
+    text-decoration: none;
+    color: $color-primario ;
+}
+body{
+    background-color: $color-primario;
+}

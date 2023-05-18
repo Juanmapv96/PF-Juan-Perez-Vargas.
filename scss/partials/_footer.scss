@@ -1,0 +1,108 @@
+@import "../var/variables";
+
+.footer__container{
+    background-color: $color-secundario;
+   
+   
+}
+.footer__logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.footer__logo--size{
+    width: 200px;
+    
+}
+@media (min-width:865px) {
+    .footer__container {
+        display: grid;     
+        grid-template-columns: 25% 25% 25% 25%; 
+        grid-template-rows: 150px; 
+        gap: 10px 0px; 
+        grid-template-areas: 
+          "logo redes datos pago";
+           
+      }
+      .footer__logo { grid-area: logo; }
+     
+      
+      .footer__pago { grid-area: pago; }
+      
+      .footer__redes { grid-area: redes; }
+    
+      .footer__datos { grid-area: datos; }
+
+      .Footer-Titulo{
+        font-weight:650 ;
+        font-size: 20px;
+    }
+      
+       .footer--textSZ { 
+        
+        font-size: 14px;}
+      
+    }
+@media (min-width:477px) and (max-width:864px) {
+    .footer__container {
+        display: grid;     
+        grid-template-columns: 50% 50%; 
+        grid-template-rows: 130px 130px ; 
+        gap: 15px 0px; 
+        grid-template-areas: 
+          "logo redes"
+          "pago datos"; 
+      }
+      .footer__logo { grid-area: logo; } 
+      
+      .footer__pago { grid-area: pago; }
+      
+      .footer__redes { grid-area: redes; }
+    
+      .footer__datos { grid-area: datos; }
+
+      .Footer-Titulo{
+        font-weight:755 ;
+        font-size: 25px;}
+      
+       .footer--textSZ { 
+        
+        font-size: 18px;}
+        
+    }  
+@media (min-width:320px) and (max-width:476px) {
+.footer__container {
+    display: grid;     
+    grid-template-columns: 100%; 
+    grid-template-rows: 130px ; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "logo"
+      "redes"
+      "pago"
+      "datos"; 
+  }
+  .footer__logo { grid-area: logo; } 
+  
+  .footer__pago { grid-area: pago; }
+  
+  .footer__redes { grid-area: redes; }
+
+  .footer__datos { grid-area: datos; }
+
+  .Footer-Titulo{
+    font-weight:800 ;
+    font-size: 25px;}
+  
+   .footer--textSZ { 
+    
+    font-size: 18px;}
+ 
+}
+
+.footer__pago, .footer__datos, .footer__logo, .footer__Ilist__container{
+    @include flex-columna-centro;
+    
+    
+}

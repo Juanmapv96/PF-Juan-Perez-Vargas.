@@ -1,0 +1,14 @@
+$color-primario: #f5f0ec;
+$color-secundario: #6d8b74;
+$color-terciario: black;
+
+
+$fuente-principal: 'Montserrat', sans-serif;
+
+@mixin flex-columna-centro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+

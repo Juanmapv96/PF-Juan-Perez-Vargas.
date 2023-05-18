@@ -1,0 +1,31 @@
+ /* Servicios */
+@media (min-width:900px) { 
+    .main__prductos {
+        display: grid;
+        grid-template-columns: repeat(4, 0.5fr); 
+        grid-template-rows: repeat(4, 0.07fr); 
+        gap: 30px;
+        grid-template-areas:
+    "card1 card1 card2 card2"
+    "card4 card4 card3 card3";      
+    }
+    .card__producto1 {  grid-area: card1;  }
+
+    .card__producto2 {  grid-area: card2;  }
+
+    .card__producto3 {  grid-area: card3;  }
+
+    .card__producto4 {  grid-area: card4;  }
+
+    .main__prductos { margin-left: 130px;}
+
+    .producto{
+        
+        width: 60%;
+    }
+    
+    .img-card{
+        
+       height: 180px;
+    }
+  }

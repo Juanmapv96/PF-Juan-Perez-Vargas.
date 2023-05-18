@@ -1,0 +1,94 @@
+ /* Noticias */
+@media (min-width:900px){
+    .main__contianer__noticias {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+    
+        grid-template-areas:
+          "card2 card1 card1 card1 card3"
+          "card2 card1 card1 card1 card3"
+          "card4 card1 card1 card1 card5"
+          "card4 card1 card1 card1 card5";
+      }
+    
+      .not-cardPPAL { grid-area: card1; }
+    
+      .not-card2 { grid-area: card2; }
+    
+      .not-card3 { grid-area: card4; }
+    
+      .not-card4 { grid-area: card3; }
+    
+      .not-card5 { grid-area: card5; }
+    }
+    
+      @media (min-width:500px) and (max-width:899px){
+        .main__contianer__noticias {  display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-auto-columns: 1fr;
+            gap: 0px 0px;
+            grid-template-areas:
+              "card1 card1 card1 card1"
+              "card1 card1 card1 card1"
+              "card1 card1 card1 card1"
+              "car3 car3 card2 card2"
+              "car3 car3 card2 card2"
+              "card4 card4 card5 card5"
+              "card4 card4 card5 card5";
+          }
+    
+          .not-cardPPAL { grid-area: card1; }
+    
+            .not-card2{ grid-area: car3; }
+    
+            .not-card3 { grid-area: card4; }
+    
+            .not-card4 { grid-area: card5; }
+    
+            .not-card5 { grid-area: card2; }
+    
+    
+      }
+    
+      @media (min-width:320px) and (max-width:499px){
+        .main__contianer__noticias {  display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: repeat(10,1fr);
+            gap: 0px 0px;
+            grid-template-areas:
+              "card1 card1 card1 card1"
+              "card1 card1 card1 card1"
+              "card2 card2 card2 card2"
+              "card2 card2 card2 card2 "
+              "card3 card3 card3 card3"
+              "card3 card3 card3 card3"
+              "card4 card4 card4 card4"
+              "card4 card4 card4 card4"
+              "card5 card5 card5 card5"
+              "card5 card5 card5 card5";
+          }
+    
+          .not-cardPPAL { grid-area: card1; }
+    
+            .not-card2 { grid-area: card2; }
+    
+            .not-card3 { grid-area: card3; }
+    
+            .not-card4 { grid-area: card4; }
+    
+            .not-card5 { grid-area: card5; }
+    
+    
+      }
+    @import "../var/variables";
+      .btn-primary{
+        --bs-btn-bg: #6d8b74; //no me hace caso "$color-secundario" y nose poke D:  
+        --bs-btn-border-color: $color-secundario ;
+        //tengo algun que otro problema con el edit de colores 
+        // arreglar antes de la entrega final
+    
+      }
+    

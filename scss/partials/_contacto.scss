@@ -1,0 +1,75 @@
+/* Contactanos */
+
+.Icons-Text{
+    color:black
+}
+
+
+@media (min-width:875px) {
+
+.section__container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+    grid-template-rows: 100px 150px 30px 300px;   
+    gap: 10px 0px;    
+    grid-template-areas:
+    "tituloPPAL "
+    "segmento1 segmento2"
+    "segmento1 segmento2"
+    "segmento3 aside"
+   
+    }
+    .map--size{
+        width: 85%;
+        height: 300px;
+        border-radius: 10px
+    }
+
+      .titulo__contacto {grid-area: tituloPPAL;}
+
+      .container__contactatos1 { grid-area: segmento1; }
+      
+      .container__contactatos2 { grid-area: segmento2; }
+
+      .container__contactatos3 {grid-area: segmento3;}
+    
+      .datos__Icons {
+        padding-left: 1px;
+      }
+      
+    }
+   
+
+@media (min-width:320px) and (max-width:500px) {  
+    
+    .section__container {
+        display: grid;
+        grid-template-columns: 1fr   ;
+        grid-template-rows: 100px 150px 1fr 400px ;   
+        gap: 20px 0px;
+        grid-template-areas:
+        "tituloPPAL"
+        "segmento1 "
+        "segmento2 "
+        "segmento3 "       
+        }
+        .titulo__contacto {grid-area: tituloPPAL;}
+        
+        .container__contactatos1 { grid-area: segmento1; }
+          
+        .container__contactatos2 { grid-area: segmento2; }
+    
+        .container__contactatos3 {grid-area: segmento3;}
+
+    
+    .map--size{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        
+    }
+
+    .datos__Icons {
+        padding-left: 1px;
+      }
+}

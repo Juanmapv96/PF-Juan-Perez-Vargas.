@@ -1,0 +1,41 @@
+@import "../var/variables";
+.header__logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.header__logo--sz{         
+    width: 200px;
+}
+
+.header {
+    background-color: $color-secundario ;
+
+}
+.header--stiky, .navbar{
+
+    position: sticky ; 
+    top: 0px;
+    opacity: 1;
+    z-index: 2;
+    
+}
+
+.nav-item{  
+    display: block;
+    padding-left: 75px ; 
+        
+}
+
+.nav-link, .nav--text{
+    color: #f5f0ec;  
+    
+   
+}
+
+.navbar-nav{
+    margin: 0 auto;
+    font-weight: bold;
+}
