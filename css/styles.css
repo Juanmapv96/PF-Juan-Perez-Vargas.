@@ -161,72 +161,6 @@ body {
   font-weight: bold;
 }
 
-@media (min-width: 900px) {
-  #carouselExample {
-    width: 70%;
-    margin: 0 auto;
-  }
-  .carousel-item .img {
-    margin: 0 auto;
-    height: 450px;
-    width: 700px;
-  }
-  #carouselExampleCard {
-    width: 60%;
-    margin: 0 auto;
-  }
-  .card-map {
-    height: 400px;
-    width: 435px;
-  }
-}
-@media (min-width: 900px) and (min-width: 900px) {
-  .banner-atte {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas: ".  titulo1 titulo1 titulo1 ." ". reloj titulo2 titulo2 ." ". reloj titulo3 titulo3 ." ". . texto texto ." ". . boton boton .";
-  }
-  .titlePpla-atte {
-    grid-area: titulo1;
-  }
-  .reloj-atte {
-    grid-area: reloj;
-  }
-  .title1-atte {
-    grid-area: titulo2;
-  }
-  .title2-atte {
-    grid-area: titulo3;
-  }
-  .text-atte {
-    grid-area: texto;
-  }
-  .btn-atte {
-    grid-area: boton;
-  }
-}
-@media (max-width: 899px) {
-  #carouselExample {
-    width: 100%;
-  }
-  .carousel-item .img {
-    height: 380px;
-    width: 100%;
-  }
-  #carouselExampleCard {
-    width: 80%;
-    margin: 0 auto;
-  }
-  .card-map {
-    height: 100%;
-    width: 100%;
-  }
-  .card-body {
-    padding: 10px;
-  }
-}
 .banner-atte {
   margin-top: 100px;
   width: 100%;
@@ -252,13 +186,77 @@ body {
   font-weight: 100;
 }
 
-@media (min-width: 320px) and (max-width: 899px) {
+@media (min-width: 900px) {
   .banner-atte {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
-    grid-template-areas: "titulo1 titulo1 titulo1" "reloj titulo2 titulo2" "reloj titulo3 titulo3" ". texto texto" ". boton boton";
+    grid-template-areas: ".  titulo1 titulo1 titulo1 ." ". reloj titulo2 titulo2 ." ". reloj titulo3 titulo3 ." ". . texto texto ." ". . boton boton .";
+  }
+  .titlePpla-atte {
+    grid-area: titulo1;
+  }
+  .reloj-atte {
+    grid-area: reloj;
+  }
+  .title1-atte {
+    grid-area: titulo2;
+  }
+  .title2-atte {
+    grid-area: titulo3;
+  }
+  .text-atte {
+    grid-area: texto;
+  }
+  .btn-atte {
+    grid-area: boton;
+  }
+  #carouselExample {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .carousel-item .img {
+    margin: 0 auto;
+    height: 450px;
+    width: 700px;
+  }
+  #carouselExampleCard {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .card-map {
+    height: 400px;
+    width: 435px;
+  }
+}
+@media (min-width: 320px) and (max-width: 899px) {
+  #carouselExample {
+    width: 100%;
+  }
+  .carousel-item .img {
+    height: 380px;
+    width: 100%;
+  }
+  #carouselExampleCard {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .card-map {
+    height: 100%;
+    width: 100%;
+  }
+  .card-body {
+    padding: 10px;
+  }
+}
+@media (min-width: 320px) and (max-width: 474px) {
+  .banner-atte {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "titulo1 titulo1" "reloj titulo2" "reloj  titulo3" "texto texto" "boton boton";
   }
   .titlePpla-atte {
     grid-area: titulo1;
