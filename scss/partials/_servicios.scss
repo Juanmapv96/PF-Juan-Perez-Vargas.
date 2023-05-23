@@ -1,14 +1,23 @@
  /* Servicios */
-@media (min-width:900px) { 
+@media (min-width:768px) {
+
+    
+    
     .main__prductos {
         display: grid;
-        grid-template-columns: repeat(4, 0.5fr); 
-        grid-template-rows: repeat(4, 0.07fr); 
-        gap: 30px;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(3, 0.07fr); 
+        gap: 30px 0px;
         grid-template-areas:
-    "card1 card1 card2 card2"
-    "card4 card4 card3 card3";      
+    "titulo titulo "
+    "card1   card2"
+    "card4   card3";
+    justify-items: center; 
+    align-items: center;      
     }
+
+    .title-serv{ grid-area: titulo;}
+    
     .card__producto1 {  grid-area: card1;  }
 
     .card__producto2 {  grid-area: card2;  }
@@ -17,15 +26,77 @@
 
     .card__producto4 {  grid-area: card4;  }
 
-    .main__prductos { margin-left: 130px;}
-
-    .producto{
+    
+// no que varie por los margenes //
+    .producto{ 
         
-        width: 60%;
+        width: 300px;
+        height: 380px;
+        transition: all 2s;
+        &:hover{
+            width: 60%;
+            height:450px;
+
+        }    
     }
     
     .img-card{
         
        height: 180px;
     }
+
+    
   }
+
+  @media (min-width:320px) and (max-width:426px) {
+
+    
+    
+    .main__prductos {
+        display: grid;
+        justify-items: center; 
+        align-items: center; 
+        grid-template-columns: repeat(1, 1fr); 
+        grid-template-rows: repeat(5, 0.07fr); 
+        gap: 30px 0px;
+        grid-template-areas:
+    "titulo "
+    "card1 "
+    "card2"
+    "card3"
+    "card4";
+         
+    }
+
+    .title-serv{ grid-area: titulo;}
+    
+    .card__producto1 {  grid-area: card1;  }
+
+    .card__producto2 {  grid-area: card2;  }
+
+    .card__producto3 {  grid-area: card3;  }
+
+    .card__producto4 {  grid-area: card4;  }
+
+    .main__producto{
+        margin: 0 auto;
+    }
+    .producto{ 
+        
+        width: 300px;
+        height: 380px;
+        transition: all 2s;
+        &:hover{
+            width: 60%;
+            height:450px;
+            
+
+        }    
+    }
+    
+    .img-card{
+        
+       height: 180px;
+    }
+
+}

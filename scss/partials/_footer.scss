@@ -1,5 +1,9 @@
 @import "../var/variables";
-
+ul{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0rem;
+}
 .footer__container{
     background-color: $color-secundario;
    
@@ -12,7 +16,7 @@
     
 }
 .footer__logo--size{
-    width: 200px;
+    width: 250px;
     
 }
 @media (min-width:865px) {
@@ -35,20 +39,20 @@
       .footer__datos { grid-area: datos; }
 
       .Footer-Titulo{
-        font-weight:650 ;
-        font-size: 20px;
+        font-weight:750 ;
+        font-size: 23px;
     }
       
        .footer--textSZ { 
         
-        font-size: 14px;}
+        font-size: 15px;}
       
     }
 @media (min-width:477px) and (max-width:864px) {
     .footer__container {
         display: grid;     
         grid-template-columns: 50% 50%; 
-        grid-template-rows: 130px 130px ; 
+        grid-template-rows: 130px 150px ; 
         gap: 15px 0px; 
         grid-template-areas: 
           "logo redes"
