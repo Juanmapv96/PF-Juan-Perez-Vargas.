@@ -15,6 +15,8 @@ body {
 
 .title-color {
   color: #6d8b74;
+  font-size: 35px;
+  font-weight: bold;
 }
 
 .header__logo {
