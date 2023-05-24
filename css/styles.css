@@ -13,6 +13,10 @@ body {
   background-color: #f5f0ec;
 }
 
+.title-color {
+  color: #6d8b74;
+}
+
 .header__logo {
   display: flex;
   flex-direction: column;
@@ -352,7 +356,7 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr, 1fr;
-    gap: 0px 0px;
+    gap: 0px 40px;
     grid-auto-flow: row;
     grid-template-areas: "card1 card2" "card1 card2";
   }
@@ -372,7 +376,7 @@ ul {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr, 1fr;
-    gap: 0px 0px;
+    gap: 10px 30px;
     grid-auto-flow: row;
     grid-template-areas: "card1 " "card2";
   }
@@ -514,12 +518,12 @@ ul {
   }
   .producto {
     width: 300px;
-    height: 380px;
+    height: 450px;
     transition: all 2s;
   }
   .producto:hover {
     width: 60%;
-    height: 450px;
+    height: 500px;
   }
   .img-card {
     height: 180px;
